@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="static/css/img/2.png" rel="icon">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Cloud Antivirus</title>
+</head>
+<body>
+    <header>
+        <h1>Cloud Antivirus</h1>
+    </header>
+    <div class="background"></div>
+    <div class="container">
+        <div class="item">
+            <div class="text-item">
+                <h2>Welcome!
+                    <br>
+                    <span>To Our Page</span>
+                </h2>
+                <p>Cloud Antivirus is a type of antivirus software that uses cloud computing technology to protect a
+                    user's computer from malware and other types of cyber threats.</p>
+            </div>
+        </div>
+        <div class="container1">
+            <h1><br>Folder Upload</h1>
+            <form action={%url "index"%} method='POST'>
+                {% csrf_token %}
+                <input type="file" name="folderInput" id="folderInput" webkitdirectory directory multiple />
+                <br>
+                <br>
+                <button id="submitBtn">Submit Folder</button>
+            </form>
+        </div>
+            <!--<div id="virus-detected-message"></div>-->
+
+    </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Cloud Antivirus. All rights reserved.</p>
+    </footer>
+
+    <!--<script src="static/javascript/script.js"></script>-->
+
+
+</body>
+
+</html>
